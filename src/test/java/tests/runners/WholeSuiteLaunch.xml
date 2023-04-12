@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Task_2 test suites: all tests">
+
+    <test name="DataValidationTest">
+        <classes>
+            <class name="tests.api.DataValidationTests"/>
+        </classes>
+    </test>
+
+    <test name="TaskTest">
+        <classes>
+            <class name="tests.api.TaskTests"/>
+        </classes>
+    </test>
+
+    <test name="API_Test">
+        <classes>
+            <class name="tests.api.ApiTests"/>
+        </classes>
+    </test>
+
+</suite>
