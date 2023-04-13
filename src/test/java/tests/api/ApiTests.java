@@ -2,7 +2,9 @@ package tests.api;
 
 import config.EndPoint;
 import io.restassured.response.ValidatableResponse;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import testlistener.TestListener;
 import tests.utils.UtilsMethods;
 import utils.ValidateResponse;
 
@@ -10,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.Matchers.lessThan;
 
+@Listeners({TestListener.class})
 public class ApiTests {
     ValidatableResponse response = ValidateResponse.getRequest(EndPoint.ENTRIES.getPath());
 

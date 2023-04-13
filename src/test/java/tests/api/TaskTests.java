@@ -2,7 +2,9 @@ package tests.api;
 
 import config.EndPoint;
 import models.JsonElementModel;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import testlistener.TestListener;
 import tests.utils.UtilsMethods;
 import utils.ValidateResponse;
 
@@ -11,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+//@Listeners({TestListener.class})
 public class TaskTests {
     List<JsonElementModel> jsonElementList = ValidateResponse.getJsonElementList(EndPoint.ENTRIES.getPath());
 
